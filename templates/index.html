@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#32131f">
+    <title>For Mahiiii | A Royal Celebration</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <audio id="birthdayMusic" loop preload="auto">
+        <source src="{{ url_for('static', filename='music/deepika.mp3') }}" type="audio/mpeg">
+    </audio>
+
+    <!-- CINEMATIC CURTAIN INTRO -->
+    <div class="cinema-intro" id="cinemaIntro">
+        <div class="curtain curtain-left"></div>
+        <div class="curtain curtain-right"></div>
+
+        <div class="intro-content">
+            <div class="intro-crown">♕</div>
+            <p class="intro-eyebrow">A CELEBRATION IN HER HONOUR</p>
+            <h1 class="intro-name">MAHIIII</h1>
+            <div class="intro-ornament">✦ ━━━━━ ✦</div>
+            <p class="intro-caption">A little world, made just for you.</p>
+        </div>
+    </div>
+
+    <main class="invitation" id="invitation">
+        <div class="grain"></div>
+        <div class="gold-line top-line"></div>
+        <div class="gold-line bottom-line"></div>
+
+        <div class="corner corner-tl">✦</div>
+        <div class="corner corner-tr">✦</div>
+        <div class="corner corner-bl">✦</div>
+        <div class="corner corner-br">✦</div>
+
+        <section class="hero">
+            <p class="eyebrow">A SPECIAL CELEBRATION</p>
+            <div class="crown">♕</div>
+            <p class="presented">A royal invitation for</p>
+            <h1>Mahiiii<span>.</span></h1>
+
+            <div class="ornament"><span></span>✦<span></span></div>
+
+            <p class="subtitle">
+                Today, the world celebrates someone<br>
+                who makes ours a little brighter.
+            </p>
+
+            <button id="enterButton" class="enter-button">
+                <span>ENTER THE CELEBRATION</span>
+                <span class="arrow">↗</span>
+            </button>
+
+            <p class="bottom-note">MADE WITH LOVE & A LITTLE SIBLING CHAOS</p>
+        </section>
+
+        <div class="side-label left-label">THE MAHIIII EDITION</div>
+        <div class="side-label right-label">A DAY TO REMEMBER</div>
+    </main>
+
+    <!-- BIRTHDAY EXPERIENCE -->
+    <section class="birthday-world" id="birthdayWorld">
+
+        <section class="portrait-section">
+            <p class="section-kicker">THE GIRL OF THE HOUR</p>
+            <h2>Simply <em>Mahiiii.</em></h2>
+
+            <div class="portrait-frame">
+                <img src="{{ url_for('static', filename='images/hero.jpg') }}"
+                     alt="Mahiiii">
+                <span class="portrait-decoration">✦</span>
+            </div>
+
+            <p class="portrait-caption">
+                One person. A thousand memories. An entire world of love.
+            </p>
+        </section>
+
+        <section class="memories-section">
+            <p class="section-kicker">LITTLE MOMENTS, BIG MEMORIES</p>
+            <h2>A gallery of <em>you.</em></h2>
+
+            <div class="memory-grid">
+                <figure class="memory-card memory-tall">
+                    <img src="{{ url_for('static', filename='images/memory1.jpg') }}" alt="A memory of Mahiiii">
+                    <figcaption>One for the memories ✦</figcaption>
+                </figure>
+
+                <figure class="memory-card">
+                    <img src="{{ url_for('static', filename='images/memory2.jpg') }}" alt="A memory of Mahiiii">
+                    <figcaption>Our favourite moments</figcaption>
+                </figure>
+
+                <figure class="memory-card">
+                    <img src="{{ url_for('static', filename='images/memory3.jpg') }}" alt="A memory of Mahiiii">
+                    <figcaption>Little things, forever</figcaption>
+                </figure>
+
+                <figure class="memory-card memory-tall">
+                    <img src="{{ url_for('static', filename='images/memory4.jpg') }}" alt="A memory of Mahiiii">
+                    <figcaption>Pure Mahiiii energy</figcaption>
+                </figure>
+
+                <figure class="memory-card memory-wide">
+                    <img src="{{ url_for('static', filename='images/memory5.jpg') }}" alt="A memory of Mahiiii">
+                    <figcaption>And many more to come ♡</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="letter-section">
+            <p class="section-kicker">A LITTLE NOTE FROM YOUR SIBLING</p>
+
+            <div class="letter-envelope" id="letterEnvelope">
+                <div class="letter-crown">♕</div>
+                <h2>A letter for <em>Mahiiii.</em></h2>
+                <p class="envelope-caption">Something I don't say enough...</p>
+                <button class="reveal-button" id="revealLetter">
+                    OPEN YOUR LETTER <span>✦</span>
+                </button>
+            </div>
+
+            <div class="letter-card" id="letterCard" aria-hidden="true">
+                <div class="letter-crown">♕</div>
+                <h2>Dear <em>Mahiiii,</em></h2>
+
+                <p>
+                    I don't say it every day, but having you as my sister
+                    is one of life's greatest gifts.
+                </p>
+
+                <p>
+                    From the random arguments to the endless teasing,
+                    from the silly little moments to the memories we'll
+                    keep forever — life would be a lot less interesting
+                    without you.
+                </p>
+
+                <p>
+                    Keep being your wonderfully chaotic, kind and
+                    unforgettable self. Never stop dreaming, laughing
+                    and making the world a little brighter.
+                </p>
+
+                <p>
+                    And yes, despite all the sibling drama, I wouldn't
+                    trade you for anyone.
+                </p>
+
+                <div class="letter-divider">✦ ━━━━━ ✦</div>
+                <p class="letter-signature">With all my love,<br>Your sibling ♡</p>
+            </div>
+        </section>
+
+        <footer class="birthday-footer">
+            <span>♕</span>
+            <p>MADE ESPECIALLY FOR MAHIIII</p>
+            <small>WITH LOVE, ALWAYS.</small>
+        </footer>
+
+    </section>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
